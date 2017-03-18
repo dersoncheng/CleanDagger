@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CleanDagger</string>
+    <string name="toast_label">值是%d </string>
+</resources>
