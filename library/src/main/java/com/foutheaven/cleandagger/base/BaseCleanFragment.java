@@ -17,7 +17,7 @@ import javax.inject.Inject;
  * Created by yishengcl on 17/3/16.
  */
 
-public class BaseCleanFragment extends Fragment{
+public class BaseCleanFragment extends Fragment {
 
     @Inject
     protected SharedPreferences mPreferences;
@@ -32,7 +32,7 @@ public class BaseCleanFragment extends Fragment{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         DaggerFragmentComponent.builder()
-                .applicationComponent(((CleanApplication)getActivity().getApplication()).getApplicationComponent())
+                .applicationComponent(((CleanApplication) getActivity().getApplication()).getApplicationComponent())
                 .activityModule(new ActivityModule((BaseCleanActivity) getActivity()))
                 .fragmentModule(new FragmentModule())
                 .build().inject(this);

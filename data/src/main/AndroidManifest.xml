@@ -1,4 +1,4 @@
-<manifest package="com.derson.dagger.data"
+<manifest package="com.derson.app.data"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application android:allowBackup="true"

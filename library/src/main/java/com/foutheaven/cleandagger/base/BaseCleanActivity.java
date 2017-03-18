@@ -15,7 +15,7 @@ import javax.inject.Inject;
  * Created by yishengcl on 17/3/16.
  */
 
-public class BaseCleanActivity extends FragmentActivity{
+public class BaseCleanActivity extends FragmentActivity {
 
     @Inject
     protected Resources mResources;
@@ -24,7 +24,7 @@ public class BaseCleanActivity extends FragmentActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         DaggerActivityComponent.builder()
-                .applicationComponent(((CleanApplication)getApplication()).getApplicationComponent())
+                .applicationComponent(((CleanApplication) getApplication()).getApplicationComponent())
                 .activityModule(new ActivityModule(this))
                 .build().inject(this);
     }

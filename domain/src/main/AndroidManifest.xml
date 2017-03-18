@@ -1,4 +1,4 @@
-<manifest package="com.derson.cleandagger.domain"
+<manifest package="com.derson.app.domain"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application android:allowBackup="true"
